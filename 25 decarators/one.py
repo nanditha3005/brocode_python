@@ -1,0 +1,12 @@
+def user_uppercase(func):
+ 
+    def inner():
+        msg=func()
+        return msg.upper()
+    return inner
+
+@user_uppercase
+def print_user(func):
+    return "Hii ,Rahul Gandhi"
+
+print(print_user)
