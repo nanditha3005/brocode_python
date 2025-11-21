@@ -1,3 +1,7 @@
+# class variables--- shared among all instances of a class
+#                    defined outside a constructor
+#                    allow you to share data among all objects created from that class
+
 class student:
     
     class_year=2025
@@ -7,8 +11,6 @@ class student:
         self.name=name
         self.age=age
         student.num_students += 1
-
-    
 
 
 student1=student("rahul",45)     
@@ -21,7 +23,7 @@ print(student2.name)                  #sonia
 print(student2.age)                   #34
 print(student1.class_year)            #2025
 print(student2.class_year)            #2025
-print(student.class_year)             #2025  its better to create a class variable using class anme rather than using objects
+print(student.class_year)             #2025  its better to create a class variable using class name rather than using objects
 
 print(student.num_students)            #3
 
