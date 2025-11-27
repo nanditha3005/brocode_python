@@ -1,5 +1,7 @@
-# python  file detection
+# python  file detection----file detection in Python — how to check if a file (or folder) exists, 
+#                           is readable, writable, etc., using modern and reliable Python methods.
 
+# this is using relative file path
 import os
 file_path="stuff/test.txt"
 
@@ -15,4 +17,18 @@ else:
 
 
 
+# this is modren amd recommended way to write in 2025
 
+from pathlib import Path
+file_path1=Path("Stuff/test.txt")
+
+if file_path1.exists():
+    print("path exits")
+
+    if file_path1.is_file():
+        print("it's a file")
+    elif file_path1.is_dir():
+        print("it's a directory")
+
+else:
+    print("path doesnt exists")
