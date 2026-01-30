@@ -1,0 +1,10 @@
+name=input("enter your name")
+age=input("Enter your age")
+print(f"My name is :{name}")
+print(f"My age is:{age}")
+
+print("--------------------")
+name=input("My name is : ")
+age=input("My age is :")
+print (f"name")
+print(f"age")
